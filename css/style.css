@@ -45,6 +45,7 @@ header .navbar{
   margin: 0;
   row-gap: 10px;
 }
+/* chỉnh search input */
 .navbar-content .form-control{
   padding: 10px 50px 10px 20px;
   background-color: #fff;
@@ -68,33 +69,80 @@ header .navbar{
 #basic-addon1 i:hover{
   cursor: pointer;
 }
+/* chỉnh phần switch button */
+#switchButton{
+  margin: 0 10px;
+}
+#switchButton:focus{
+  box-shadow: none;
+}
 #switchButton .gg-moon{
   display: block;
   color: #fff;
-  /* font-size: 16px; */
 }
 #switchButton .gg-sun{
   display: none;
 }
+/* button popup menu */
+.navbar-content .navbar-toggler{
+  border: none;
+}
+.navbar-toggler span.fa{
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
 /* chỉnh phần popup menu */
-header .modal{
+.modal{
   background: rgb(6 3 0 / 77%);
 }
 .modal .modal-dialog{
   max-width: 100vw;
   height: 100vh;
+  margin: 0;
 }
 .modal-content{
   background: transparent;
   width: 100%;
   height: 100%;
+  justify-content: center;
 }
-.close{
-  text-align: right;
+.modal-content .close{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: block;
+  min-width: 40px;
+  min-height: 40px;
+  text-align: center;
+  border-radius: .5rem;
+  background-color: var(--primary-color);
+
+  /* ghi đè thuộc tính bootstrap */
+    color: #fff;
+    text-shadow: none;
+    opacity: 1;
+}
+.close:not(:disabled):not(.disabled):hover{
+  opacity: 1;
+}
+.modal-content .close i{
+  line-height: 40px;
+  /* color: #fff; */
+  font-size: 16px;
 }
 .modal-content ul{
   margin: 0 auto;
   align-items: center;
+}
+.modal-content ul.navbar-nav li.nav-item a.nav-link{
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  transition: color .5s;
+}
+.modal-content ul.navbar-nav li.nav-item a.nav-link:hover{
+  color: var(--primary-color);
 }
 
 /* Responsive Desktop First */
