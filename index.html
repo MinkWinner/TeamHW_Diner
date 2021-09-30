@@ -16,12 +16,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <!-- CSS.GG icon -->
     <link href='https://css.gg/css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg/icons/all.css' rel='stylesheet'>
     <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
-
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./component/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./component/OwlCarousel/dist/assets/owl.theme.default.min.css">
     <!-- Boot Strap 4.6-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -104,15 +105,226 @@
         <section class=""></section>
         <section class=""></section>
         <section class=""></section>
-        <section class=""></section>
-        <section class=""></section>
+        <section class="blog py-5">
+            <div class="container py-md-5 py-2">
+                <div class="blog-title title">
+                    <h6>Latest Posts</h6>
+                    <h2>Blog Posts</h2>
+                </div>
+                <div class="blog-card">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 mt-5">
+                            <div class="card">
+                                <div class="blog-media">
+                                    <a href="#"><img src="./img/banner1.jpg" class="card-img-top" alt="top dinner for dating"></a>
+                                    <div class="media-info">
+                                        <a href="#">Reciepe</a>
+                                        <span class="far fa-clock">10 Min Cook</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h5 class="card-title">The Best Cookie Recipes To Bake This Weekend</h5>
+                                    </a>
+                                  <p class="card-text">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="author-name">
+                                        <img src="./img/team1.jpg" alt="blog poster">
+                                        <span class="ml-2">Rashed Kadir</span>
+                                    </a>
+                                    <a href="#">Read More<i class="fas fa-chevron-right ml-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mt-5">
+                            <div class="card">
+                                <div class="blog-media">
+                                    <a href="#"><img src="./img/banner3.jpg" class="card-img-top" alt="top dinner for dating"></a>
+                                    <div class="media-info">
+                                        <a href="#">Soup</a>
+                                        <span class="far fa-clock">10 Min Cook</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#"><h5 class="card-title">The Best Cookie Recipes To Bake This Weekend</h5></a>
+                                  <p class="card-text">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="author-name">
+                                        <img src="./img/team2.jpg" alt="blog poster">
+                                        <span class="ml-2">Rashed Kadir</span>
+                                    </a>
+                                    <a href="#">Read More<i class="fas fa-chevron-right ml-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mt-5">
+                            <div class="card">
+                                <div class="blog-media">
+                                    <a href="#"><img src="./img/banner1.jpg" class="card-img-top" alt="top dinner for dating"></a>
+                                    <div class="media-info">
+                                        <a href="#">Drinks</a>
+                                        <span class="far fa-clock">10 Min Cook</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#"><h5 class="card-title">The Best Cookie Recipes To Bake This Weekend</h5></a>
+                                  <p class="card-text">Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi vitae sit.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a href="#" class="author-name">
+                                        <img src="./img/team3.jpg" alt="blog poster">
+                                        <span class="ml-2">Rashed Kadir</span>
+                                    </a>
+                                    <a href="#">Read More<i class="fas fa-chevron-right ml-2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial py-5">
+            <div class="container py-lg-5 py-md-3">
+                <div class="testimonial-title title mb-5 ">
+                    <h6>Testimonials</h6>
+                    <h2>What People Say</h2>
+                </div>
+                <div class="testimonial-content">
+                    <div class="owl-carousel owl-theme owl-loaded">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage">
+                                <div class="owl-item text-center testimonial-item">
+                                    <a href="#" class="comment-img">
+                                        <img src="./img/team1.jpg" alt="user comment">
+                                    </a>
+                                    <blockquote><q>OMG! I cannot believe. It's Awesome</q></blockquote>
+                                    <p>My new site is so much faster and easier to work with than my old site. They are here to
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                    Pellen tesque libero ut justo, ultrices in ligula.</p>
+                                    <h3>Johnson William</h3>
+                                    <p>Customer</p>
+                                </div>
+                                <div class="owl-item text-center testimonial-item">
+                                    <a href="#" class="comment-img">
+                                        <img src="./img/team2.jpg" alt="user comment">
+                                    </a>
+                                    <blockquote><q>Simply the best. Better than all the rest.</q></blockquote>
+                                    <p>My new site is so much faster and easier to work with than my old site. They are here to
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                       Pellen tesque libero ut justo, ultrices in ligula.</h3>
+                                    <p>Customer</p>
+                                </div>
+                                <div class="owl-item text-center testimonial-item">
+                                    <a href="#" class="comment-img">
+                                        <img src="./img/team3.jpg" alt="user comment">
+                                    </a>
+                                    <blockquote><q>OMG! I cannot believe. It's Awesome</q></blockquote>
+                                    <p>My new site is so much faster and easier to work with than my old site. They are here to
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                    Pellen tesque libero ut justo, ultrices in ligula.</p>
+                                    <h3>Johnson Wilson</h3>
+                                    <p>Customer</p>
+                                </div>
+                                <div class="owl-item text-center testimonial-item">
+                                    <a href="#" class="comment-img">
+                                        <img src="./img/team1.jpg" alt="user comment">
+                                    </a>
+                                    <blockquote><q>OMG! I cannot believe. It's Awesome</q></blockquote>
+                                    <p>My new site is so much faster and easier to work with than my old site. They are here to
+                                    help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                    Pellen tesque libero ut justo, ultrices in ligula.</p>
+                                    <h3>Johnson William</h3>
+                                    <p>Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-
+    <footer class="pt-5">
+        <div class="container">
+            <div class="footer-upper py-lg-4">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="footer-logo">
+                            <a href="#" class="mb-3">Diner</a>
+                        </div>
+                        <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
+                        <div class="footer-social-network text-center text-lg-left">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                            <a href="#" class="fab fa-linkedin-in"></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-2 mt-5 mt-sm-0">
+                        <h6>Usefull Links</h6>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog posts</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-2 mt-5 mt-lg-0">
+                        <h6>Usefull Links</h6>
+                        <ul>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Vision & Values</a></li>
+                            <li><a href="#">Adwards</a></li>
+                            <li><a href="#">Media</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 mt-5 mt-lg-0">
+                        <h6>Subscribe to our Newsletter</h6>
+                        <p>Enter your email and receive the latest news, updates and special offers from us.</p>
+                        <form action="#">
+                            <input type="email" placeholder="Your Email Address" class="w-100"><br>
+                            <button class="w-100 mt-3">Subscribe Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-lower py-2 mt-5">
+                <div class="row">
+                    <div class="text-left col-lg-8">
+                        <p>&copy 2021 Diner. All rights reserved. Design by <a href="#">W3Layouts</a></p>
+                    </div>
+                    <div class="text-right col-lg-4">
+                        <ul class="d-flex text-lg-right">
+                            <li><a href="#">Careers</a></li>
+                            <li class="mx-lg-5 mx-md-4 mx-3"><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
 <!-- Javascript Section -->
+
+<!-- OwlCarousel -->
+<script src="./component/OwlCarousel/docs_src/assets/vendors/jquery.min.js"></script>
+<script src="./component/OwlCarousel/docs/assets/owlcarousel/owl.carousel.min.js"></script>
+<script>
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items:1,
+        loop:true,
+        margin:10,
+        autoplay:false,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+    });
+</script>
 <!-- Boot Strap -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
