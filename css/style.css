@@ -71,7 +71,8 @@ header .navbar{
 }
 /* chỉnh phần switch button */
 #switchButton{
-  margin: 0 10px;
+  margin-right: 20px;
+  width: 24px;
 }
 #switchButton:focus{
   box-shadow: none;
@@ -82,6 +83,14 @@ header .navbar{
 }
 #switchButton .gg-sun{
   display: none;
+  color: #fff;
+}
+/* chỉnh dark theme */
+.dark #switchButton .gg-moon{
+  display: none;
+}
+.dark #switchButton .gg-sun{
+  display: block;
 }
 /* button popup menu */
 .navbar-content .navbar-toggler{
