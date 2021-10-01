@@ -172,7 +172,7 @@ header .navbar {
 /* BOOKING */
 
 .booking{
-  margin: 200px 0; 
+  margin-top: 200px; 
 }
 
 .booking .container-fluid{
@@ -263,6 +263,159 @@ header .navbar {
 .booking__icon:hover span{
   color: #ffc600;
 }
+
+
+/* CATEGORIES */
+
+.categories__top{
+  background-color: #f7f7f7;
+  padding: 100px;
+}
+
+.categories__title{
+  text-align: center;
+}
+
+.categories__title h6{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.categories__title h3{
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.categories__item img{
+  width: 100%;
+  display: block;
+  margin: auto;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.categories__item img:hover{
+  opacity: 0.85;
+  transition: all 0.4s;
+}
+
+.categories__item{
+  position: relative;
+}
+
+.categories__item::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76) 100%);
+  border-radius: 6px;
+}
+
+.categories__item a{
+  text-decoration: none;
+}
+
+.categories__text{
+  position: absolute;
+  bottom: 25px;
+  left: 40px;
+}
+
+.categories__text a{
+  text-decoration: none;
+}
+
+.categories__text h4{
+  font-size: 22px;
+  line-height: 30px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.categories__text h6{
+  font-weight: 600;
+  color: #ffc600;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.categories__bottom{
+  padding: 100px 0;
+}
+
+.categories__bg{
+  padding: 40px 40px;
+  border-radius: 8px;
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 3%);
+  background-color: #fff;
+  position: relative;
+  border: 1px solid #eee;
+  transition: .5s ease 0s;
+}
+
+.categories__bg:hover{
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+
+.categories-wrap{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+}
+
+.categories__bg .categories-icon{
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  background: rgba(130, 115, 252, .05);
+  line-height: 70px;
+  border-radius: 6px;
+  transition: .3s ease-in-out;
+}
+
+.categories__bg:hover .categories-icon{
+  background-color: #ff6600;
+}
+
+.categories-icon i{
+  color: #ff6600;
+  font-size: 25px;
+  line-height: 70px;
+  transition: .3s ease-in-out;
+}
+
+.categories__bg:hover .categories-icon i{
+  color: white;
+}
+
+.categories-foodName p{
+  font-size: 18px;
+  line-height: 28px;
+  color: rgba(22, 28, 45, 0.7);
+  font-family: 'Quicksand', sans-serif;
+}
+
+.categories-foodName h4 a{
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  display: block;
+  color: var(--heading-color);
+}
+
+.categories-foodName h4 a:hover{
+  color: #ff6600;
+}
+
 
 
 
