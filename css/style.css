@@ -168,9 +168,14 @@ header .navbar {
   color: var(--primary-color);
 }
 
-/* CAROUSEL ------------------ */
+/* CAROUSEL */
 .my-carousel{
   padding-top: 210px;
+  background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),url(../img/banner1.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 .my-carousel .carousel__content{
   max-width: 600px;
@@ -186,6 +191,7 @@ header .navbar {
   color: #fff;
   line-height: 28px;
   padding-right: 2rem;
+  margin: 1rem 0 0  ;
 }
 .my-carousel button{
   padding: 12px 45px;
@@ -208,10 +214,31 @@ header .navbar {
   font-size: 24px;
 }
 
+/* ABOUT */
+.about__title h6{
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.about__title h2{
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+.about__content{
+  padding-left: 30px;
+}
+.about__content p{
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--font-color);
+  font-family: var(--font-quicksand);
+}
+
 /* BLOG POST ----------------- */
 .blog {
   background-color: #f7f7f7;
-  margin-top: 200px;
+  /* margin-top: 200px; */
 }
 
 .blog-card .card {
@@ -532,14 +559,6 @@ footer {
 }
 /* -----------------------------*/
 
-/* CAROUSEL */
-.my-carousel{
-  background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),url(../img/banner1.jpg);
-  background-size: cover;
-  background-position: top center;
-  background-attachment: fixed;
-  min-height: 100vh;
-}
 
 /* Responsive Desktop First */
 
@@ -550,18 +569,41 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+  .carousel__content h2{
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .about__content{
+    padding-left: 0;
+  }
   .footer-lower .text-left p {
     text-align: center;
   }
 }
 
 @media screen and (max-width: 768px) {
-  
+  .carousel__content h2{
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
 @media screen and (max-width: 576px) {
-  
+  header .navbar-content .form-inline{
+    display: none;
+  }
+  .my-carousel button{
+    margin-top: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
+} 
+
+/* Custom media query */
+@media screen and (max-width: 1080px) {
+  .about__title h2{
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
