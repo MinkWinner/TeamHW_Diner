@@ -29,6 +29,7 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--font-quicksand);
+  margin: 0;
 }
 
 .title h6 {
@@ -185,11 +186,14 @@ header .navbar {
 
 .blog-title h6 {
   font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 30px;
 }
 
 .blog-title h2 {
   font-weight: 600;
   font-size: 38px;
+  line-height: 48px;
 }
 
 .blog-media {
@@ -310,6 +314,7 @@ p.card-text {
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 1px;
+  margin-bottom: 0;
 }
 
 .testimonial-title h2 {
@@ -347,6 +352,7 @@ p.card-text {
   color: var(--heading-color);
   font-weight: 600;
   font-style: italic;
+  letter-spacing: 1px;
 }
 
 .testimonial-content .testimonial-item p {
@@ -359,11 +365,19 @@ p.card-text {
 .testimonial-content .testimonial-item h3 {
   font-size: 20px;
   font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+.testimonial-content .testimonial-item p:last-of-type {
+  margin-top: 4px;
+  margin-bottom: 1.5em;
 }
 .testimonial-content .owl-theme .owl-dots .owl-dot.active span,
 .testimonial-content .owl-theme .owl-dots .owl-dot:hover span {
   background-color: var(--primary-color);
 }
+
 /* ----------------------------- */
 
 /*FOOTER -----------------------*/
@@ -371,7 +385,12 @@ footer {
   background-color: #000;
 }
 
-.footer-upper .footer-logo a {
+.footer-upper {
+  margin-bottom: 2em;
+}
+
+.footer-upper h2.footer-logo a {
+  font-family: var(--font-family-sans-serif);
   text-decoration: none;
   color: #fff;
   font-size: 30px;
@@ -416,6 +435,14 @@ footer {
   font-weight: 700;
 }
 
+.footer-upper ul {
+  margin-bottom: 0;
+}
+
+.footer-upper ul li:last-of-type {
+  margin-bottom: 0;
+}
+
 .footer-upper ul li {
   list-style: none;
   line-height: 26px;
@@ -442,6 +469,7 @@ footer {
   color: var(--font-color);
   background-color: #fff;
   border-radius: 6px;
+  font-family: var(--font-quicksand);
 }
 
 .footer-upper form input[type="email"]:focus {
@@ -451,6 +479,7 @@ footer {
 
 .footer-upper form button {
   color: #fff;
+  font-family: var(--font-quicksand);
   background-color: var(--primary-color);
   border: 2px solid transparent;
   border-radius: 6px;
@@ -471,11 +500,15 @@ footer {
 .footer-lower .text-left p {
   color: #ddd;
   font-size: 17px;
+  margin-bottom: 0;
+  font-family: var(--font-quicksand);
+  line-height: 28px;
 }
 
 .footer-lower .text-left p a {
   color: var(--primary-color);
   text-decoration: none;
+  font-family: var(--font-family-sans-serif);
 }
 
 .footer-lower .text-left p a:hover {
@@ -486,24 +519,69 @@ footer {
   color: var(--font-color-footer);
   text-decoration: none;
   font-size: 17px;
+  line-height: 26px;
 }
 .footer-lower .text-right a:hover {
   color: var(--primary-color);
 }
 /* -----------------------------*/
 
+a.bttbtn.cd-top {
+  background-color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  right: 22px;
+  bottom: 55px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+}
+
+a.bttbtn.cd-top::before {
+  color: #fff;
+  line-height: 50px;
+}
 /* Responsive Desktop First */
 
 @media screen and (max-width: 1200px) {
+  /* TESTIMONIAL */
+
+  .testimonial-title h2 {
+    font-size: 38px;
+  }
+
+  /* FOOTER */
   .footer-lower .text-left p {
     text-align: left;
+  }
+  .footer-upper h6 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  /* ---------- */
+}
+
+@media screen and (max-width: 1080px) {
+  /* TESTIMONIAL */
+
+  .testimonial-title h2 {
+    font-size: 32px;
   }
 }
 
 @media screen and (max-width: 992px) {
+  /* FOOTER */
   .footer-lower .text-left p {
     text-align: center;
   }
+  .footer-upper h6 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* ---------- */
 }
 
 @media screen and (max-width: 768px) {
