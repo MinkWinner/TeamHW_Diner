@@ -38,7 +38,7 @@ h6 {
 
 /* LOCAL */
 
-/* HEADER */
+/* HEADER ----------------- */
 header {
   position: absolute;
   top: 0;
@@ -166,6 +166,46 @@ header .navbar {
 }
 .modal-content ul.navbar-nav li.nav-item a.nav-link:hover {
   color: var(--primary-color);
+}
+
+/* CAROUSEL ------------------ */
+.my-carousel{
+  padding-top: 210px;
+}
+.my-carousel .carousel__content{
+  max-width: 600px;
+}
+.carousel__content h2{
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 64px;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.carousel__content p{
+  color: #fff;
+  line-height: 28px;
+  padding-right: 2rem;
+}
+.my-carousel button{
+  padding: 12px 45px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-top: 3rem;
+  transition: background-color .5s;
+}
+.my-carousel button:hover{
+  background-color: #fff;
+  color: var(--primary-color);
+}
+.my-carousel button i{
+  margin-left: .5rem;
+  vertical-align: text-bottom;
+  font-size: 24px;
 }
 
 /* BLOG POST ----------------- */
@@ -516,9 +556,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  
 }
 
 @media screen and (max-width: 576px) {
+  
 }
 
 @media screen and (max-width: 576px) {
