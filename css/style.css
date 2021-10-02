@@ -12,7 +12,10 @@ html {
 :root {
   --primary-color: #ff6600;
   --secondary-color: #ffc600;
+  --bg-dark: #232220;
   --font-color: rgba(22, 28, 45, 0.7);
+  --font-color-light: #c2d0da;
+  --font-heading-light: #eee;
   --heading-color: #232121;
   --font-quicksand: "Quicksand", sans-serif;
   --font-pacifico: "Pacifico", cursive;
@@ -38,7 +41,7 @@ h6 {
 
 /* LOCAL */
 
-/* HEADER */
+/* HEADER ----------------- */
 header {
   position: absolute;
   top: 0;
@@ -61,9 +64,9 @@ header .navbar {
 .navbar-content .form-control {
   padding: 10px 50px 10px 20px;
   background-color: #fff;
+  outline: 0;
 }
 .navbar-content .form-control:focus {
-  border: none;
   box-shadow: none;
 }
 .navbar-content
@@ -98,13 +101,6 @@ header .navbar {
 #switchButton .gg-sun {
   display: none;
   color: #fff;
-}
-/* chỉnh dark theme */
-.dark #switchButton .gg-moon {
-  display: none;
-}
-.dark #switchButton .gg-sun {
-  display: block;
 }
 /* button popup menu */
 .navbar-content .navbar-toggler {
@@ -168,10 +164,77 @@ header .navbar {
   color: var(--primary-color);
 }
 
+/* CAROUSEL */
+.my-carousel{
+  padding-top: 210px;
+  background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),url(../img/banner1.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+.my-carousel .carousel__content{
+  max-width: 600px;
+}
+.carousel__content h2{
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 64px;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+.carousel__content p{
+  color: #fff;
+  line-height: 28px;
+  padding-right: 2rem;
+  margin: 1rem 0 0  ;
+}
+.my-carousel button{
+  padding: 12px 45px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  margin-top: 3rem;
+  transition: background-color .5s;
+}
+.my-carousel button:hover{
+  background-color: #fff;
+  color: var(--primary-color);
+}
+.my-carousel button i{
+  margin-left: .5rem;
+  vertical-align: text-bottom;
+  font-size: 24px;
+}
+
+/* ABOUT */
+.about__title h6{
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.about__title h2{
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+.about__content{
+  padding-left: 30px;
+}
+.about__content p{
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--font-color);
+  font-family: var(--font-quicksand);
+}
+
 /* BLOG POST ----------------- */
 .blog {
   background-color: #f7f7f7;
-  margin-top: 200px;
+  /* margin-top: 200px; */
 }
 
 .blog-card .card {
@@ -492,6 +555,35 @@ footer {
 }
 /* -----------------------------*/
 
+/* Dark Theme */
+body.dark{
+  background-color: var(--bg-dark);
+}
+/* HEADER */
+.dark .navbar-content .form-control {
+  background-color: var(--bg-dark);
+  border-color: var(--bg-dark);
+  color: var(--font-color-light);
+}
+.dark .navbar-content .form-inline i{
+  color: var(--font-color-light);
+}
+.dark #switchButton .gg-moon {
+  display: none;
+}
+.dark #switchButton .gg-sun {
+  display: block;
+}
+
+/* ABOUT */
+.dark .about__title h2{
+  color: var(--font-heading-light);
+}
+.dark .about__content p{
+  color: var(--font-color-light);
+}
+
+
 /* Responsive Desktop First */
 
 @media screen and (max-width: 1200px) {
@@ -501,16 +593,41 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+  .carousel__content h2{
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .about__content{
+    padding-left: 0;
+  }
   .footer-lower .text-left p {
     text-align: center;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .carousel__content h2{
+    font-size: 40px;
+    line-height: 50px;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  header .navbar-content .form-inline{
+    display: none;
+  }
+  .my-carousel button{
+    margin-top: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
+} 
+
+/* Custom media query */
+@media screen and (max-width: 1080px) {
+  .about__title h2{
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
