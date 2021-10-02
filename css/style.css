@@ -12,7 +12,10 @@ html {
 :root {
   --primary-color: #ff6600;
   --secondary-color: #ffc600;
+  --bg-dark: #232220;
   --font-color: rgba(22, 28, 45, 0.7);
+  --font-color-light: #c2d0da;
+  --font-heading-light: #eee;
   --heading-color: #232121;
   --font-quicksand: "Quicksand", sans-serif;
   --font-pacifico: "Pacifico", cursive;
@@ -61,9 +64,9 @@ header .navbar {
 .navbar-content .form-control {
   padding: 10px 50px 10px 20px;
   background-color: #fff;
+  outline: 0;
 }
 .navbar-content .form-control:focus {
-  border: none;
   box-shadow: none;
 }
 .navbar-content
@@ -98,13 +101,6 @@ header .navbar {
 #switchButton .gg-sun {
   display: none;
   color: #fff;
-}
-/* chỉnh dark theme */
-.dark #switchButton .gg-moon {
-  display: none;
-}
-.dark #switchButton .gg-sun {
-  display: block;
 }
 /* button popup menu */
 .navbar-content .navbar-toggler {
@@ -558,6 +554,34 @@ footer {
   color: var(--primary-color);
 }
 /* -----------------------------*/
+
+/* Dark Theme */
+body.dark{
+  background-color: var(--bg-dark);
+}
+/* HEADER */
+.dark .navbar-content .form-control {
+  background-color: var(--bg-dark);
+  border-color: var(--bg-dark);
+  color: var(--font-color-light);
+}
+.dark .navbar-content .form-inline i{
+  color: var(--font-color-light);
+}
+.dark #switchButton .gg-moon {
+  display: none;
+}
+.dark #switchButton .gg-sun {
+  display: block;
+}
+
+/* ABOUT */
+.dark .about__title h2{
+  color: var(--font-heading-light);
+}
+.dark .about__content p{
+  color: var(--font-color-light);
+}
 
 
 /* Responsive Desktop First */
