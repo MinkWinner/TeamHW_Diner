@@ -769,3 +769,12 @@ body.dark {
     line-height: 40px;
   }
 }
+@media screen and (max-width: 800px) {
+  header{
+    top: 60px;
+  }
+  .my-carousel{
+    min-height: 600px;
+    margin-top: 60px;;
+  }
+}
