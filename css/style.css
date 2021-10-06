@@ -191,7 +191,7 @@ header .navbar {
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
-  min-height: 100vh;
+  min-height: 700px;
 }
 .my-carousel .carousel__content {
   max-width: 600px;
