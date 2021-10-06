@@ -13,6 +13,7 @@ html {
   --primary-color: #ff6600;
   --secondary-color: #ffc600;
   --bg-dark: #232220;
+  --bg-grey: #282828;
   --font-color: rgba(22, 28, 45, 0.7);
   --font-color-light: #c2d0da;
   --font-heading-light: #eee;
@@ -578,6 +579,10 @@ footer {
   color: #fff;
 }
 
+.footer-lower .text-right li {
+  list-style: none;
+}
+
 .footer-lower .text-right a {
   color: var(--font-color-footer);
   text-decoration: none;
@@ -632,6 +637,45 @@ body.dark {
 }
 .dark .about__content p {
   color: var(--font-color-light);
+}
+
+/* BLOG */
+.dark .blog {
+  background-color: var(--bg-grey);
+}
+
+.dark .title h2 {
+  color: var(--font-heading-light);
+}
+
+.dark .blog h5,
+.dark span,
+.dark a {
+  color: var(--font-heading-light);
+}
+
+.dark .blog p {
+  color: var(--font-color-light);
+}
+
+/* TESTIMONIAL*/
+.dark .testimonial p {
+  color: var(--font-color-light);
+}
+
+.dark .testimonial q,
+.dark .testimonial h3 {
+  color: var(--font-heading-light);
+}
+
+/* FOOTER */
+.dark footer input[type="email"] {
+  background-color: var(--bg-dark);
+}
+
+.dark .footer-social-network a {
+  background-color: var(--bg-dark);
+  color: var(--primary-color);
 }
 
 /* Responsive Desktop First */
