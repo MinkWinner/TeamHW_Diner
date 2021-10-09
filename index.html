@@ -30,7 +30,7 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <!-- Magnifig Popup Video -->
-    <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="./css/magnific.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -450,9 +450,18 @@
             </div>
             <div class="video">
                 <div class="container">
-                    
+                    <div class="video-bg">
+                        <a href="#small-dialog1" class="play-icon popup-with-zoom-anim"><span class="fa fa-play-circle" aria-hidden="true"></span>
+                        </a>
+                        
+                        <div id="small-dialog1" class="w3ls_small_dialog wthree_pop mfp-hide">
+                          <div class="agileits_modal_body">
+                            <iframe src="https://player.vimeo.com/video/106770833" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+                          </div>
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </section>
         <section class="blog py-5">
@@ -710,7 +719,8 @@
 
 
 <!-- Magnific Popup Video -->
-<script src="magnific-popup/jquery.magnific-popup.js"></script>
+<script src="./js/jquery.magnific-popup.js"></script>
+<script src="./js/jquery.magnific-popup.min.js"></script>
 <script>
     $(document).ready(function () {
         $(".popup-with-zoom-anim").magnificPopup({
