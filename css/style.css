@@ -417,6 +417,119 @@ header .navbar {
 }
 
 
+/* DELICIOUS */
+
+.delicious__content{
+  background: url(../img/banner2.jpg) no-repeat center;
+  background-size: cover;
+  height: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.delicious__overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background: rgb(16 15 19 / 66%);
+}
+
+.delicious__title{
+  max-width: 700px;
+  margin: auto;
+}
+
+.delicious__content h3{
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 600;
+  color: #fff;
+  max-width: 800px;
+}
+
+.btn-style, .btn-white{
+  padding: 12px 45px;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 700;
+  border-radius: 6px;
+  border: 2px solid transparent;
+}
+
+.btn-white{
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  transition: .3s ease-in;
+}
+
+.btn-primary{
+  color: #fff;
+  background-color: #ff6600;
+  transition: .3s ease-in;
+}
+
+.delicious button:hover.btn-white{
+  background-color: white;
+  color: #ff6600;
+}
+
+.delicious button:hover.btn-primary{
+  color: #fff;
+  background-color: #ff6600;
+  border: 2px solid #ff6600;
+  opacity: 0.8;
+}
+
+.delicious__item{
+  background-color: white;
+  box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+  padding: 40px 20px;
+  border-radius: 6px;
+  text-align: center;
+  transition: .3s ease;
+}
+
+.delicious__item:hover{
+  transform: translateY(-0.25rem);
+  box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
+}
+
+.delicious .delicious__item span{
+  display: inline-block;
+  width: 68px;
+  height: 68px;
+  text-align: center;
+  line-height: 68px;
+  background-color: #ff6600;
+  font-size: 26px;
+  color: white;
+  border-radius: 50%;
+} 
+
+.numbercount{
+  font-size: 2.6em;
+  font-weight: 600;
+  color: black;
+}
+
+.delicious__item p{
+  text-transform: capitalize;
+  color: rgba(22, 28, 45, 0.7);
+  font-weight: 600;
+}
+
+.delicious__number{
+  position: absolute;
+  bottom: -169px;
+  left: 190px;
+}
+
+/* DELICIOUS VIDEO */
+
+
 
 
 /* BLOG POST ----------------- */
