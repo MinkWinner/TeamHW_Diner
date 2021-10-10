@@ -141,7 +141,6 @@
                 </div>
             </div>
         </section>
-        <section class=""></section>
         <section class="booking">
             <div class="container-fluid">
                 <div class="row">
@@ -451,12 +450,14 @@
             <div class="video">
                 <div class="container">
                     <div class="video-bg">
-                        <a href="#small-dialog1" class="play-icon popup-with-zoom-anim"><span class="fa fa-play-circle" aria-hidden="true"></span>
+                        <a href="#small-dialog1" class="play-icon popup-with-zoom-anim text-center">
+                            <span class="video-play-icon" aria-hidden="true">
+                                <span class="fa fa-play"></span>
+                            </span>
                         </a>
-                        
                         <div id="small-dialog1" class="w3ls_small_dialog wthree_pop mfp-hide">
                           <div class="agileits_modal_body">
-                            <iframe src="https://player.vimeo.com/video/106770833" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+                            <iframe src="https://player.vimeo.com/video/305185528"frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
                           </div>
                         </div>
                     </div>
@@ -719,22 +720,43 @@
 
 
 <!-- Magnific Popup Video -->
-<script src="./js/jquery.magnific-popup.js"></script>
 <script src="./js/jquery.magnific-popup.min.js"></script>
 <script>
+    
     $(document).ready(function () {
-        $(".popup-with-zoom-anim").magnificPopup({
-            type: "inline",
-            fixedContentPos: false,
-            fixedBgPos: true,
-            overflowY: "auto",
-            closeBtnInside: true,
-            preloader: false,
-            midClick: true,
-            removalDelay: 300,
-            mainClass: "my-mfp-zoom-in"
-        });
+      $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+      });
+
+      $('.popup-with-move-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+      });
     });
+  
 
 </script>
 
