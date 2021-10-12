@@ -199,7 +199,7 @@ header .navbar {
 .booking__image {
   background: url(../img/banner3.jpg) no-repeat center;
   background-size: cover;
-  min-height: 600px;
+  height: 100%;
 
   position: relative;
 }
@@ -394,8 +394,8 @@ header .navbar {
 
 .categories__text {
   position: absolute;
-  bottom: 25px;
-  left: 40px;
+  bottom: 0;
+  left: 0;
 }
 
 .categories__text a {
@@ -593,8 +593,12 @@ header .navbar {
 
 .delicious__number {
   position: absolute;
-  bottom: -169px;
-  left: 190px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translate(-50%,50%);
+  top: 50%;
+  left: 50%;
 }
 
 /* DELICIOUS VIDEO */
@@ -820,7 +824,6 @@ a.play-icon.zoom-anim-dialog img:hover {
   z-index: 1043;
   position: fixed;
   outline: none !important;
-  -webkit-backface-visibility: hidden;
 }
 
 .mfp-container {
@@ -1551,6 +1554,47 @@ body.dark {
   color: var(--font-color-light);
 }
 
+/* CATEGORIES */
+
+.dark .categories__top{
+  background-color: var(--bg-grey);
+}
+
+.dark .categories__top h3{
+  color: var(--font-heading-light);
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+
+.dark .categories__bg{
+  background-color: var(--bg-dark);
+}
+
+.dark .categories__bg p{
+  color: var(--font-color-light);
+}
+
+.dark .categories__bg .categories-foodName h4 a{
+  color: var(--font-heading-light);
+}
+
+
+/* DELICIOUS */
+
+.dark .delicious__item{
+  background-color: var(--bg-dark);
+}
+
+.dark .delicious__item .numbercount{
+  color: var(--font-heading-light);
+}
+
+.dark .delicious__item p{
+  color: var(--font-color-light);
+}
+
+
 /* TESTIMONIAL*/
 .dark .testimonial p {
   color: var(--font-color-light);
@@ -1600,6 +1644,11 @@ body.dark {
 }
 
 @media screen and (max-width: 992px) {
+  /* BOOKING */
+  .booking__image{
+    min-height: 200px;
+  }
+  
   /* FOOTER */
   .carousel__content h2 {
     font-size: 44px;
@@ -1623,6 +1672,17 @@ body.dark {
   .carousel__content h2 {
     font-size: 40px;
     line-height: 50px;
+  }
+
+  /* CATEGORIES */
+  .categories__text h4{
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  /* DELICIOUS VIDEO */
+  .video{
+    margin-top: 220px;
   }
 }
 
