@@ -184,9 +184,6 @@ header .navbar {
 
 /* BOOKING */
 
-.booking {
-  margin-top: 200px;
-}
 
 .booking .container-fluid {
   background-color: #ff6600;
@@ -1545,14 +1542,16 @@ body.dark {
 }
 
 .dark .blog h5,
-.dark span,
-.dark a {
+.dark .blog span,
+.dark .blog a {
   color: var(--font-heading-light);
 }
 
 .dark .blog p {
   color: var(--font-color-light);
 }
+
+
 
 /* CATEGORIES */
 
@@ -1569,6 +1568,7 @@ body.dark {
 
 .dark .categories__bg{
   background-color: var(--bg-dark);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .dark .categories__bg p{
