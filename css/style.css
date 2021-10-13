@@ -1551,6 +1551,11 @@ body.dark {
   color: var(--font-color-light);
 }
 
+/* BOOKING */
+
+.dark .booking_item a{
+  color: #eee;
+}
 
 
 /* CATEGORIES */
@@ -1581,6 +1586,10 @@ body.dark {
 
 
 /* DELICIOUS */
+
+.dark .delicious__number{
+  background-color: var(--bg-dark);
+}
 
 .dark .delicious__item{
   background-color: var(--bg-dark);
