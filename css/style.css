@@ -494,23 +494,36 @@ input[placeholder="Search here..."] {
 .delicious__content {
   background: url(../img/banner2.jpg) no-repeat center;
   background-size: cover;
-  height: 500px;
+  /* height: 500px; */
   text-align: center;
   position: relative;
 }
 
-.delicious__overlay {
+.delicious__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  min-height: 100%;
+  background: rgb(16 15 19 / 66%);
+}
+
+/* .delicious__overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   min-height: 100%;
   background: rgb(16 15 19 / 66%);
-}
+} */
 
 .delicious__title {
   max-width: 700px;
   margin: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .delicious__content h3 {
@@ -558,6 +571,7 @@ input[placeholder="Search here..."] {
 
 .delicious__number {
   position: relative;
+  z-index: 2;
   height: 270px;
   /* padding: 20px 0 30px; */
 }
@@ -1673,12 +1687,12 @@ body.dark {
   }
 }
 
-@media screen and (max-width: 1080px) {
-  /* TESTIMONIAL */
+/* @media screen and (max-width: 1080px) {
+  TESTIMONIAL
   .testimonial-title h2 {
     font-size: 32px;
   }
-}
+} */
 
 @media screen and (max-width: 992px) {
   /* Carousel */
@@ -1818,6 +1832,16 @@ body.dark {
     font-size: 32px;
     line-height: 40px;
   }
+
+  /* TESTIMONIAL */
+  .testimonial-title h2 {
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .video-bg {
+    min-height: 400px;
+  }
 }
 @media screen and (max-width: 800px) {
   header {
@@ -1828,6 +1852,12 @@ body.dark {
     margin-top: 60px;
   }
 }
+@media (max-width: 736px) {
+  .delicious__title h3 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
 @media screen and (max-width: 640px) {
   .about__title h2 {
     font-size: 30px;
@@ -1835,6 +1865,9 @@ body.dark {
   }
   .numbercount {
     font-size: 2em;
+  }
+  .video-bg {
+    min-height: 350px;
   }
 }
 
@@ -1849,7 +1882,7 @@ body.dark {
     line-height: 38px;
   }
 
-  .my-carousel button {
+  .my-carousel button, .delicious__title button {
     padding: 10px 21px;
   }
 
@@ -1857,6 +1890,7 @@ body.dark {
     font-size: 26px;
     line-height: 36px;
   }
+
   /* BLOG */
   .blog-title h6 {
     font-size: 16px;
@@ -1868,7 +1902,18 @@ body.dark {
   }
 }
 
+@media screen and (max-width: 415px) {
+  .delicious__title h3 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+
 @media screen and (max-width: 375px) {
+  
+  .video-bg {
+    min-height: 300px;
+  }
   /* BLOG */
   .blog-title h6 {
     font-size: 16px;
