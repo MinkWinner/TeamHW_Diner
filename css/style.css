@@ -550,6 +550,12 @@ header .navbar {
   opacity: 0.8;
 }
 
+.delicious__number {
+  position: relative;
+  height: 270px;
+  /* padding: 20px 0 30px; */
+}
+
 .delicious__item {
   background-color: white;
   box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
@@ -588,21 +594,18 @@ header .navbar {
   font-weight: 600;
 }
 
-.delicious__number {
+.delicious__number>div{
   position: absolute;
-  bottom: 0;
+  top: -20%;
   left: 0;
   width: 100%;
-  transform: translate(-50%,50%);
-  top: 50%;
-  left: 50%;
 }
 
 /* DELICIOUS VIDEO */
 
-.video {
+/* .video {
   padding: 300px 0 100px;
-}
+} */
 
 .video-bg {
   background: url(../img/banner3.jpg) no-repeat center;
@@ -1553,6 +1556,10 @@ body.dark {
 
 /* BOOKING */
 
+.dark .booking__details h3{
+  color: #eee;
+}
+
 .dark .booking_item a{
   color: #eee;
 }
@@ -1587,9 +1594,9 @@ body.dark {
 
 /* DELICIOUS */
 
-.dark .delicious__number{
+/* .dark .delicious__number{
   background-color: var(--bg-dark);
-}
+} */
 
 .dark .delicious__item{
   background-color: var(--bg-dark);
@@ -1657,6 +1664,14 @@ body.dark {
   .booking__image{
     min-height: 200px;
   }
+
+  /* DELICIOUS */
+  .delicious__number {
+    height: 100%;
+  }
+  .delicious__number>div {
+    position: relative;
+  }
   
   /* FOOTER */
   .carousel__content h2 {
@@ -1688,11 +1703,6 @@ body.dark {
     font-size: 16px;
     line-height: 28px;
   }
-
-  /* DELICIOUS VIDEO */
-  .video{
-    margin-top: 220px;
-  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1721,5 +1731,10 @@ body.dark {
   .my-carousel {
     min-height: 600px;
     margin-top: 60px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .numbercount {
+    font-size: 2em;
   }
 }

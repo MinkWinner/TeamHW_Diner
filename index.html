@@ -379,8 +379,8 @@
                 </div>
             </div>
         </section>
-        <section class="delicious">
-            <div class="delicious__content py-5">
+        <section class="delicious py-5">
+            <div class="delicious__content">
                 <div class="delicious__overlay py-5">
                     <div class="container">
                         <div class="delicious__title text-center py-5">
@@ -400,57 +400,55 @@
                                 </button>
                             </div>
                         </div>
-                        
                     </div>
-                    
-                        <div class="container delicious__number">
-                            <div>
-                                <div class="row">
-                                    <div class="col-6 col-md-3 mt-4 mt-md-0 ">
-                                        <div class="delicious__item">
-                                            <span>
-                                                <i class="fa fa-building"></i>
-                                            </span>
-                                            <div class="numbercount mt-3">15,100</div>
-                                            <p>Branches</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-md-3 mt-4 mt-md-0 ">
-                                        <div class="delicious__item">
-                                            <span>
-                                                <i class="fa fa-utensils"></i>
-                                            </span>
-                                            <div class="numbercount mt-3">19,256</div>
-                                            <p>Food Items
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-md-3 mt-4 mt-md-0 ">
-                                        <div class="delicious__item">
-                                            <span>
-                                                <i class="fa fa-users"></i>
-                                            </span>
-                                            <div class="numbercount mt-3">12,100</div>
-                                            <p>Chefs</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6 col-md-3 mt-4 mt-md-0 ">
-                                        <div class="delicious__item">
-                                            <span>
-                                                <i class="fa fa-smile"></i>
-                                            </span>
-                                            <div class="numbercount mt-3">2,560</div>
-                                            <p>Happy Customers</p>
-                                        </div>
-                                    </div>
+                </div>
+            </div>
+            <div class="container py-lg-0 py-md-5 py-4">
+                <div class="delicious__number">
+                    <div>
+                        <div class="row">
+                            <div class="col-6 col-md-3 mt-4 mt-md-0 ">
+                                <div class="delicious__item">
+                                    <span>
+                                        <i class="fa fa-building"></i>
+                                    </span>
+                                    <div class="numbercount counter mt-3">15,100</div>
+                                    <p>Branches</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 mt-4 mt-md-0 ">
+                                <div class="delicious__item">
+                                    <span>
+                                        <i class="fa fa-utensils"></i>
+                                    </span>
+                                    <div class="numbercount counter mt-3">19,256</div>
+                                    <p>Food Items
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 mt-4 mt-md-0 ">
+                                <div class="delicious__item">
+                                    <span>
+                                        <i class="fa fa-users"></i>
+                                    </span>
+                                    <div class="numbercount counter mt-3">12,100</div>
+                                    <p>Chefs</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 mt-4 mt-md-0 ">
+                                <div class="delicious__item">
+                                    <span>
+                                        <i class="fa fa-smile"></i>
+                                    </span>
+                                    <div class="numbercount counter mt-3">2,560</div>
+                                    <p>Happy Customers</p>
                                 </div>
                             </div>
                         </div>
-                    
-                    
+                    </div>
                 </div>
             </div>
-            <div class="video">
+            <div class="video py-5">
                 <div class="container">
                     <div class="video-bg">
                         <a href="#small-dialog1" class="play-icon popup-with-zoom-anim text-center">
@@ -759,8 +757,16 @@
         mainClass: 'my-mfp-slide-bottom'
       });
     });
-  
 
+</script>
+
+<!-- COUNT UP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+<script src="./js/jquery.countup.js"></script>
+<script>
+    $('.counter').countUp({
+        'time': 1500
+    });
 </script>
 
 
