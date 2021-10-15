@@ -65,16 +65,22 @@ header .navbar {
 /* chỉnh search input */
 .navbar-content .form-control {
   padding: 10px 50px 10px 20px;
+  height: 45px;
   background-color: #fff;
   outline: 0;
 }
+
+input[placeholder="Search here..."] {
+  font-family: var(--font-quicksand);
+}
+
 .navbar-content .form-control:focus {
   box-shadow: none;
 }
 .navbar-content
   .input-group:not(.has-validation)
   > .form-control:not(:last-child) {
-  border-radius: 0.25rem;
+  border-radius: 6px;
 }
 #basic-addon1 {
   position: absolute;
@@ -184,7 +190,6 @@ header .navbar {
 
 /* BOOKING */
 
-
 .booking .container-fluid {
   background-color: #ff6600;
 }
@@ -278,7 +283,6 @@ header .navbar {
 
 .categories__top {
   background-color: #f7f7f7;
-  padding: 100px;
 }
 
 .categories__title {
@@ -298,8 +302,9 @@ header .navbar {
   padding-top: 210px;
   background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
     url(../img/banner1.jpg);
+  background-position: initial;
   background-size: cover;
-  background-position: top center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 700px;
 }
@@ -318,6 +323,7 @@ header .navbar {
   line-height: 28px;
   padding-right: 2rem;
   margin: 1rem 0 0;
+  font-family: var(--font-quicksand);
 }
 .my-carousel button {
   padding: 12px 45px;
@@ -594,7 +600,7 @@ header .navbar {
   font-weight: 600;
 }
 
-.delicious__number>div{
+.delicious__number > div {
   position: absolute;
   top: -20%;
   left: 0;
@@ -1202,9 +1208,7 @@ button.mfp-arrow {
 
 .card-body {
   background-color: transparent;
-  padding-left: 0;
-  padding-right: 0;
-  padding-bottom: 0;
+  padding: 0;
 }
 
 .card-body a {
@@ -1216,7 +1220,7 @@ h5.card-title {
   font-size: 24px;
   line-height: 34px;
   font-weight: 600;
-  margin-top: 25px 0 15px;
+  margin: 25px 0 15px;
 }
 
 p.card-text {
@@ -1501,6 +1505,7 @@ a.bttbtn.cd-top {
   text-decoration: none;
   text-align: center;
   font-size: 15px;
+  z-index: 99;
 }
 
 a.bttbtn.cd-top::before {
@@ -1556,41 +1561,39 @@ body.dark {
 
 /* BOOKING */
 
-.dark .booking__details h3{
+.dark .booking__details h3 {
   color: #eee;
 }
 
-.dark .booking_item a{
+.dark .booking_item a {
   color: #eee;
 }
-
 
 /* CATEGORIES */
 
-.dark .categories__top{
+.dark .categories__top {
   background-color: var(--bg-grey);
 }
 
-.dark .categories__top h3{
+.dark .categories__top h3 {
   color: var(--font-heading-light);
   font-size: 38px;
   line-height: 48px;
   font-weight: 600;
 }
 
-.dark .categories__bg{
+.dark .categories__bg {
   background-color: var(--bg-dark);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.dark .categories__bg p{
+.dark .categories__bg p {
   color: var(--font-color-light);
 }
 
-.dark .categories__bg .categories-foodName h4 a{
+.dark .categories__bg .categories-foodName h4 a {
   color: var(--font-heading-light);
 }
-
 
 /* DELICIOUS */
 
@@ -1598,18 +1601,17 @@ body.dark {
   background-color: var(--bg-dark);
 } */
 
-.dark .delicious__item{
+.dark .delicious__item {
   background-color: var(--bg-dark);
 }
 
-.dark .delicious__item .numbercount{
+.dark .delicious__item .numbercount {
   color: var(--font-heading-light);
 }
 
-.dark .delicious__item p{
+.dark .delicious__item p {
   color: var(--font-color-light);
 }
-
 
 /* TESTIMONIAL*/
 .dark .testimonial p {
@@ -1634,6 +1636,17 @@ body.dark {
 /* Responsive Desktop First */
 
 @media screen and (max-width: 1200px) {
+  /* HEADER */
+  header nav.navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* CATEGORIES */
+  .categories__title h3 {
+    font-size: 38px;
+  }
+
   /* TESTIMONIAL */
 
   .testimonial-title h2 {
@@ -1648,20 +1661,36 @@ body.dark {
     font-size: 22px;
     margin-bottom: 20px;
   }
+
   /* ---------- */
+}
+
+@media screen and (max-width: 1190px) {
+  /* Carousel */
+  .my-carousel .carousel__content h2 {
+    font-size: 48px;
+    line-height: 58px;
+  }
 }
 
 @media screen and (max-width: 1080px) {
   /* TESTIMONIAL */
-
   .testimonial-title h2 {
     font-size: 32px;
   }
 }
 
 @media screen and (max-width: 992px) {
+  /* Carousel */
+  .my-carousel .carousel__content h2 {
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .my-carousel .carousel__content p {
+    padding-right: 0;
+  }
   /* BOOKING */
-  .booking__image{
+  .booking__image {
     min-height: 200px;
   }
 
@@ -1669,10 +1698,21 @@ body.dark {
   .delicious__number {
     height: 100%;
   }
-  .delicious__number>div {
+  .delicious__number > div {
     position: relative;
   }
-  
+
+  /* BLOG */
+  .blog-title h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  h5.card-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
   /* FOOTER */
   .carousel__content h2 {
     font-size: 44px;
@@ -1693,28 +1733,83 @@ body.dark {
 }
 
 @media screen and (max-width: 768px) {
+  /* Carousel */
+  .my-carousel .carousel__content h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
   .carousel__content h2 {
     font-size: 40px;
     line-height: 50px;
   }
 
   /* CATEGORIES */
-  .categories__text h4{
+  .categories__text h4 {
     font-size: 16px;
     line-height: 28px;
   }
 }
 
 @media screen and (max-width: 576px) {
+  /*ABOUT */
+
+  .about__title h6 {
+    font-size: 16px;
+  }
+  .about__content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .categories__title h3 {
+    font-size: 30px;
+  }
   header .navbar-content .form-inline {
     display: none;
   }
   .my-carousel button {
     margin-top: 1.5rem;
   }
-}
 
-@media screen and (max-width: 576px) {
+  /* BLOG */
+  .blog-title h6 {
+    font-size: 16px;
+  }
+
+  .blog-title h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  p.card-text {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+
+  /* Testimonial */
+  .testimonial-title h6 {
+    font-size: 16px;
+  }
+
+  .testimonial-title h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .testimonial-content blockquote q {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .testimonial-content .testimonial-item p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .testimonial-content .testimonial-item p:last-of-type {
+    font-size: 18px;
+  }
 }
 
 /* Custom media query */
@@ -1734,7 +1829,68 @@ body.dark {
   }
 }
 @media screen and (max-width: 640px) {
+  .about__title h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
   .numbercount {
     font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .my-carousel {
+    min-height: 450px;
+    padding-top: 140px;
+  }
+
+  .my-carousel .carousel__content h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .my-carousel button {
+    padding: 10px 21px;
+  }
+
+  .about__title h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  /* BLOG */
+  .blog-title h6 {
+    font-size: 16px;
+  }
+
+  .blog-title h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* BLOG */
+  .blog-title h6 {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  .blog-title h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  /* Testimonial */
+  .testimonial-title h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .testimonial-content blockquote q {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  /*Footer */
+  .footer-lower {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
